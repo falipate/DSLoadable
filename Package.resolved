@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "MSAutoView",
+        "repositoryURL": "https://github.com/BalazsSzamody/MSAutoView",
+        "state": {
+          "branch": null,
+          "revision": "2313fa4c4f86d90ee1223d956e4d141e628f11d3",
+          "version": "3.1.2"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

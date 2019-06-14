@@ -1,0 +1,6 @@
+version: "Apple Swift version 5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
+options: "e6b9bbb390626bf2f218da2a4e390b07"
+build_time: [1560470816, 669640000]
+inputs:
+  "/Users/feleti/Projects/iOS/DSLoadable/DSLoadable/Classes/DSLoadable.swift": [1560470801, 552934869]
+  "/Users/feleti/Projects/iOS/DSLoadable/DSLoadable/Classes/DSLoadingView.swift": [1560470808, 165440376]

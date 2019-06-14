@@ -1,0 +1,35 @@
+{
+  "": {
+    "swift-dependencies": "/Users/feleti/Projects/iOS/DSLoadable/.build/x86_64-apple-macosx/debug/MSAutoView.build/master.swiftdeps"
+  },
+  "/Users/feleti/Projects/iOS/DSLoadable/.build/checkouts/MSAutoView/MSAutoView/Classes/MSAutoView.swift": {
+    "dependencies": "/Users/feleti/Projects/iOS/DSLoadable/.build/x86_64-apple-macosx/debug/MSAutoView.build/MSAutoView.d",
+    "object": "/Users/feleti/Projects/iOS/DSLoadable/.build/x86_64-apple-macosx/debug/MSAutoView.build/MSAutoView.swift.o",
+    "swiftmodule": "/Users/feleti/Projects/iOS/DSLoadable/.build/x86_64-apple-macosx/debug/MSAutoView.build/MSAutoView~partial.swiftmodule",
+    "swift-dependencies": "/Users/feleti/Projects/iOS/DSLoadable/.build/x86_64-apple-macosx/debug/MSAutoView.build/MSAutoView.swiftdeps"
+  },
+  "/Users/feleti/Projects/iOS/DSLoadable/.build/checkouts/MSAutoView/MSAutoView/Classes/MSCollectionViewCell.swift": {
+    "dependencies": "/Users/feleti/Projects/iOS/DSLoadable/.build/x86_64-apple-macosx/debug/MSAutoView.build/MSCollectionViewCell.d",
+    "object": "/Users/feleti/Projects/iOS/DSLoadable/.build/x86_64-apple-macosx/debug/MSAutoView.build/MSCollectionViewCell.swift.o",
+    "swiftmodule": "/Users/feleti/Projects/iOS/DSLoadable/.build/x86_64-apple-macosx/debug/MSAutoView.build/MSCollectionViewCell~partial.swiftmodule",
+    "swift-dependencies": "/Users/feleti/Projects/iOS/DSLoadable/.build/x86_64-apple-macosx/debug/MSAutoView.build/MSCollectionViewCell.swiftdeps"
+  },
+  "/Users/feleti/Projects/iOS/DSLoadable/.build/checkouts/MSAutoView/MSAutoView/Classes/MSScrollView.swift": {
+    "dependencies": "/Users/feleti/Projects/iOS/DSLoadable/.build/x86_64-apple-macosx/debug/MSAutoView.build/MSScrollView.d",
+    "object": "/Users/feleti/Projects/iOS/DSLoadable/.build/x86_64-apple-macosx/debug/MSAutoView.build/MSScrollView.swift.o",
+    "swiftmodule": "/Users/feleti/Projects/iOS/DSLoadable/.build/x86_64-apple-macosx/debug/MSAutoView.build/MSScrollView~partial.swiftmodule",
+    "swift-dependencies": "/Users/feleti/Projects/iOS/DSLoadable/.build/x86_64-apple-macosx/debug/MSAutoView.build/MSScrollView.swiftdeps"
+  },
+  "/Users/feleti/Projects/iOS/DSLoadable/.build/checkouts/MSAutoView/MSAutoView/Classes/MSTableViewCell.swift": {
+    "dependencies": "/Users/feleti/Projects/iOS/DSLoadable/.build/x86_64-apple-macosx/debug/MSAutoView.build/MSTableViewCell.d",
+    "object": "/Users/feleti/Projects/iOS/DSLoadable/.build/x86_64-apple-macosx/debug/MSAutoView.build/MSTableViewCell.swift.o",
+    "swiftmodule": "/Users/feleti/Projects/iOS/DSLoadable/.build/x86_64-apple-macosx/debug/MSAutoView.build/MSTableViewCell~partial.swiftmodule",
+    "swift-dependencies": "/Users/feleti/Projects/iOS/DSLoadable/.build/x86_64-apple-macosx/debug/MSAutoView.build/MSTableViewCell.swiftdeps"
+  },
+  "/Users/feleti/Projects/iOS/DSLoadable/.build/checkouts/MSAutoView/MSAutoView/Classes/UIView+MSAutoView.swift": {
+    "dependencies": "/Users/feleti/Projects/iOS/DSLoadable/.build/x86_64-apple-macosx/debug/MSAutoView.build/UIView+MSAutoView.d",
+    "object": "/Users/feleti/Projects/iOS/DSLoadable/.build/x86_64-apple-macosx/debug/MSAutoView.build/UIView+MSAutoView.swift.o",
+    "swiftmodule": "/Users/feleti/Projects/iOS/DSLoadable/.build/x86_64-apple-macosx/debug/MSAutoView.build/UIView+MSAutoView~partial.swiftmodule",
+    "swift-dependencies": "/Users/feleti/Projects/iOS/DSLoadable/.build/x86_64-apple-macosx/debug/MSAutoView.build/UIView+MSAutoView.swiftdeps"
+  }
+}

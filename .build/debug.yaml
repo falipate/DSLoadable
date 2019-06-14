@@ -1,0 +1,52 @@
+client:
+  name: basic
+tools: {}
+targets:
+  "main": ["/Users/feleti/Projects/iOS/DSLoadable/.build/x86_64-apple-macosx/debug/DSLoadable.swiftmodule","<DSLoadable-debug.module>"]
+  "test": ["/Users/feleti/Projects/iOS/DSLoadable/.build/x86_64-apple-macosx/debug/DSLoadable.swiftmodule","<DSLoadable-debug.module>"]
+  "DSLoadable-debug.module": ["/Users/feleti/Projects/iOS/DSLoadable/.build/x86_64-apple-macosx/debug/DSLoadable.swiftmodule","<DSLoadable-debug.module>"]
+  "MSAutoView-debug.module": ["/Users/feleti/Projects/iOS/DSLoadable/.build/x86_64-apple-macosx/debug/MSAutoView.swiftmodule","<MSAutoView-debug.module>"]
+default: "main"
+commands: 
+  "<C.DSLoadable-debug.module>":
+    tool: phony
+    inputs: ["/Users/feleti/Projects/iOS/DSLoadable/.build/x86_64-apple-macosx/debug/DSLoadable.swiftmodule"]
+    outputs: ["<DSLoadable-debug.module>"]
+
+  "<C.MSAutoView-debug.module>":
+    tool: phony
+    inputs: ["/Users/feleti/Projects/iOS/DSLoadable/.build/x86_64-apple-macosx/debug/MSAutoView.swiftmodule"]
+    outputs: ["<MSAutoView-debug.module>"]
+
+  "C.DSLoadable-debug.module":
+    tool: swift-compiler
+    executable: "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "DSLoadable"
+    module-output-path: "/Users/feleti/Projects/iOS/DSLoadable/.build/x86_64-apple-macosx/debug/DSLoadable.swiftmodule"
+    inputs: ["/Users/feleti/Projects/iOS/DSLoadable/.build/x86_64-apple-macosx/debug/MSAutoView.swiftmodule","/Users/feleti/Projects/iOS/DSLoadable/DSLoadable/Classes/DSLoadable.swift","/Users/feleti/Projects/iOS/DSLoadable/DSLoadable/Classes/DSLoadingView.swift"]
+    outputs: ["/Users/feleti/Projects/iOS/DSLoadable/.build/x86_64-apple-macosx/debug/DSLoadable.build/DSLoadable.swift.o","/Users/feleti/Projects/iOS/DSLoadable/.build/x86_64-apple-macosx/debug/DSLoadable.build/DSLoadingView.swift.o","/Users/feleti/Projects/iOS/DSLoadable/.build/x86_64-apple-macosx/debug/DSLoadable.swiftmodule"]
+    import-paths: ["/Users/feleti/Projects/iOS/DSLoadable/.build/x86_64-apple-macosx/debug"]
+    temps-path: "/Users/feleti/Projects/iOS/DSLoadable/.build/x86_64-apple-macosx/debug/DSLoadable.build"
+    objects: ["/Users/feleti/Projects/iOS/DSLoadable/.build/x86_64-apple-macosx/debug/DSLoadable.build/DSLoadable.swift.o","/Users/feleti/Projects/iOS/DSLoadable/.build/x86_64-apple-macosx/debug/DSLoadable.build/DSLoadingView.swift.o"]
+    other-args: ["-target","x86_64-apple-macosx10.10","-swift-version","5","-enable-batch-mode","-index-store-path","/Users/feleti/Projects/iOS/DSLoadable/.build/x86_64-apple-macosx/debug/index/store","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Onone","-g","-enable-testing","-j4","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/feleti/Projects/iOS/DSLoadable/.build/x86_64-apple-macosx/debug/ModuleCache","-Xfrontend","-color-diagnostics"]
+    sources: ["/Users/feleti/Projects/iOS/DSLoadable/DSLoadable/Classes/DSLoadable.swift","/Users/feleti/Projects/iOS/DSLoadable/DSLoadable/Classes/DSLoadingView.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: "4"
+
+  "C.MSAutoView-debug.module":
+    tool: swift-compiler
+    executable: "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "MSAutoView"
+    module-output-path: "/Users/feleti/Projects/iOS/DSLoadable/.build/x86_64-apple-macosx/debug/MSAutoView.swiftmodule"
+    inputs: ["/Users/feleti/Projects/iOS/DSLoadable/.build/checkouts/MSAutoView/MSAutoView/Classes/MSAutoView.swift","/Users/feleti/Projects/iOS/DSLoadable/.build/checkouts/MSAutoView/MSAutoView/Classes/MSCollectionViewCell.swift","/Users/feleti/Projects/iOS/DSLoadable/.build/checkouts/MSAutoView/MSAutoView/Classes/MSScrollView.swift","/Users/feleti/Projects/iOS/DSLoadable/.build/checkouts/MSAutoView/MSAutoView/Classes/MSTableViewCell.swift","/Users/feleti/Projects/iOS/DSLoadable/.build/checkouts/MSAutoView/MSAutoView/Classes/UIView+MSAutoView.swift"]
+    outputs: ["/Users/feleti/Projects/iOS/DSLoadable/.build/x86_64-apple-macosx/debug/MSAutoView.build/MSAutoView.swift.o","/Users/feleti/Projects/iOS/DSLoadable/.build/x86_64-apple-macosx/debug/MSAutoView.build/MSCollectionViewCell.swift.o","/Users/feleti/Projects/iOS/DSLoadable/.build/x86_64-apple-macosx/debug/MSAutoView.build/MSScrollView.swift.o","/Users/feleti/Projects/iOS/DSLoadable/.build/x86_64-apple-macosx/debug/MSAutoView.build/MSTableViewCell.swift.o","/Users/feleti/Projects/iOS/DSLoadable/.build/x86_64-apple-macosx/debug/MSAutoView.build/UIView+MSAutoView.swift.o","/Users/feleti/Projects/iOS/DSLoadable/.build/x86_64-apple-macosx/debug/MSAutoView.swiftmodule"]
+    import-paths: ["/Users/feleti/Projects/iOS/DSLoadable/.build/x86_64-apple-macosx/debug"]
+    temps-path: "/Users/feleti/Projects/iOS/DSLoadable/.build/x86_64-apple-macosx/debug/MSAutoView.build"
+    objects: ["/Users/feleti/Projects/iOS/DSLoadable/.build/x86_64-apple-macosx/debug/MSAutoView.build/MSAutoView.swift.o","/Users/feleti/Projects/iOS/DSLoadable/.build/x86_64-apple-macosx/debug/MSAutoView.build/MSCollectionViewCell.swift.o","/Users/feleti/Projects/iOS/DSLoadable/.build/x86_64-apple-macosx/debug/MSAutoView.build/MSScrollView.swift.o","/Users/feleti/Projects/iOS/DSLoadable/.build/x86_64-apple-macosx/debug/MSAutoView.build/MSTableViewCell.swift.o","/Users/feleti/Projects/iOS/DSLoadable/.build/x86_64-apple-macosx/debug/MSAutoView.build/UIView+MSAutoView.swift.o"]
+    other-args: ["-target","x86_64-apple-macosx10.10","-swift-version","5","-enable-batch-mode","-index-store-path","/Users/feleti/Projects/iOS/DSLoadable/.build/x86_64-apple-macosx/debug/index/store","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Onone","-g","-enable-testing","-j4","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/feleti/Projects/iOS/DSLoadable/.build/x86_64-apple-macosx/debug/ModuleCache","-Xfrontend","-color-diagnostics"]
+    sources: ["/Users/feleti/Projects/iOS/DSLoadable/.build/checkouts/MSAutoView/MSAutoView/Classes/MSAutoView.swift","/Users/feleti/Projects/iOS/DSLoadable/.build/checkouts/MSAutoView/MSAutoView/Classes/MSCollectionViewCell.swift","/Users/feleti/Projects/iOS/DSLoadable/.build/checkouts/MSAutoView/MSAutoView/Classes/MSScrollView.swift","/Users/feleti/Projects/iOS/DSLoadable/.build/checkouts/MSAutoView/MSAutoView/Classes/MSTableViewCell.swift","/Users/feleti/Projects/iOS/DSLoadable/.build/checkouts/MSAutoView/MSAutoView/Classes/UIView+MSAutoView.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: "4"
+

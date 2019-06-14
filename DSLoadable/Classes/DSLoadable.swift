@@ -18,7 +18,9 @@
 //OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //THE SOFTWARE.
 
+#if canImport(UIKit)
 import Foundation
+import UIKit
 import MSAutoView
 
 /// Defines the structure of a loading view configuration. The first argument is the view that needs to be loaded. The second argument is the loading view
@@ -117,3 +119,4 @@ extension DSLoadable where Self: UIView, Self: DSLoadableConfigurable {
 }
 
 extension UIView: DSLoadable {  }
+#endif

@@ -18,6 +18,7 @@
 //OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //THE SOFTWARE.
 
+#if canImport(UIKit)
 import UIKit
 import MSAutoView
 
@@ -26,3 +27,4 @@ open class DSLoadingView: MSAutoView {
     @IBOutlet public weak var indicatorView: UIActivityIndicatorView!
 
 }
+#endif

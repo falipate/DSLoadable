@@ -1,0 +1,9 @@
+version: "Apple Swift version 5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
+options: "661977a911b34449af842666ad9d2326"
+build_time: [1560470628, 12831000]
+inputs:
+  "/Users/feleti/Projects/iOS/DSLoadable/.build/checkouts/MSAutoView/MSAutoView/Classes/MSAutoView.swift": [1560470627, 613338793]
+  "/Users/feleti/Projects/iOS/DSLoadable/.build/checkouts/MSAutoView/MSAutoView/Classes/MSCollectionViewCell.swift": [1560470627, 613595397]
+  "/Users/feleti/Projects/iOS/DSLoadable/.build/checkouts/MSAutoView/MSAutoView/Classes/MSScrollView.swift": [1560470627, 613833915]
+  "/Users/feleti/Projects/iOS/DSLoadable/.build/checkouts/MSAutoView/MSAutoView/Classes/MSTableViewCell.swift": [1560470627, 614047733]
+  "/Users/feleti/Projects/iOS/DSLoadable/.build/checkouts/MSAutoView/MSAutoView/Classes/UIView+MSAutoView.swift": [1560470627, 614440298]
