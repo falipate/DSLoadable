@@ -35,3 +35,11 @@ Carthage/Build
 # `pod install` in .travis.yml
 #
 # Pods/
+## SPM Support
+.swiftpm/
+.build/
+*.xcodeproj
+*.Resolved
+
+## Cocoapods Example project
+!Example/*.xcodeproj
