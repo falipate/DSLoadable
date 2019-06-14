@@ -1,1 +1,0 @@
-{"object": {"dependencies": [{"basedOn": null, "packageRef": {"identity": "msautoview", "isLocal": false, "name": "MSAutoView", "path": "https://github.com/BalazsSzamody/MSAutoView"}, "state": {"checkoutState": {"branch": null, "revision": "2313fa4c4f86d90ee1223d956e4d141e628f11d3", "version": "3.1.2"}, "name": "checkout"}, "subpath": "MSAutoView"}]}, "version": 2}
