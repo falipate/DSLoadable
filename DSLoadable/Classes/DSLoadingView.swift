@@ -20,11 +20,32 @@
 
 #if canImport(UIKit)
 import UIKit
-import MSAutoView
 
-open class DSLoadingView: MSAutoView {
+open class DSLoadingView: UIView {
 
-    @IBOutlet public weak var indicatorView: UIActivityIndicatorView!
-
+    public var indicatorView: UIActivityIndicatorView!
+    
+    open override func willMove(toSuperview newSuperview: UIView?) {
+        super.willMove(toSuperview: newSuperview)
+        
+        backgroundColor = UIColor.black.withAlphaComponent(0.33)
+        
+        indicatorView = UIActivityIndicatorView()
+        indicatorView.translatesAutoresizingMaskIntoConstraints = false
+        indicatorView.style = .white
+        indicatorView.color = .red
+        
+        let constraints = [
+            indicatorView.topAnchor.constraint(equalTo: topAnchor),
+            indicatorView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            indicatorView.centerXAnchor.constraint(equalTo: centerXAnchor),
+            indicatorView.centerYAnchor.constraint(equalTo: centerYAnchor)
+        ]
+        
+        addSubview(indicatorView)
+        constraints.forEach({ $0.isActive = true })
+        indicatorView.startAnimating()
+        
+    }
 }
 #endif
