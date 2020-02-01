@@ -25,9 +25,17 @@ open class DSLoadingView: UIView {
 
     public var indicatorView: UIActivityIndicatorView!
     
-    open override func willMove(toSuperview newSuperview: UIView?) {
-        super.willMove(toSuperview: newSuperview)
-        
+    public override init(frame: CGRect) {
+        super.init(frame: frame)
+        addIndicatorView()
+    }
+    
+    public required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        addIndicatorView()
+    }
+    
+    private func addIndicatorView() {
         backgroundColor = UIColor.black.withAlphaComponent(0.33)
         
         indicatorView = UIActivityIndicatorView()
@@ -45,7 +53,6 @@ open class DSLoadingView: UIView {
         addSubview(indicatorView)
         constraints.forEach({ $0.isActive = true })
         indicatorView.startAnimating()
-        
     }
 }
 #endif
