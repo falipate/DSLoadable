@@ -105,27 +105,27 @@ extension DSLoadable where Self: UIView {
             return
         }
         configuration?(self, v)
-        DispatchQueue.main.async {
+//        DispatchQueue.main.async {
             self.addSubviewWithConstraints(v)
-        }
+//        }
     }
     
     public func loadableStartLoading(configuration: DSLoadingViewFromConfiguration) {
         let view = configuration(self)
-        DispatchQueue.main.async {
+//        DispatchQueue.main.async {
             self.addSubviewWithConstraints(view)
-        }
+//        }
     }
     
     public func loadableStopLoading(loadingViewType: UIView.Type = DSLoadingView.self, configuration: DSLoadableConfiguration? = nil) {
-        DispatchQueue.main.async {
+//        DispatchQueue.main.async {
             guard let loadingView = self.subviews.first(where: { type(of: $0) == loadingViewType }) else {
                 return
             }
             configuration?(self, loadingView)
             
             loadingView.removeFromSuperview()
-        }
+//        }
     }
     
     /**
