@@ -1,9 +1,0 @@
-use_frameworks!
-
-target 'DSLoadable_Example' do
-  pod 'DSLoadable', :path => '../'
-  
-  pod 'MSAutoView'
-  pod 'NVActivityIndicatorView'
-
-end

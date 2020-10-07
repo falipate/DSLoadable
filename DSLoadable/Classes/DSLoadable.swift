@@ -21,7 +21,7 @@
 #if canImport(UIKit)
 import Foundation
 import UIKit
-import MSAutoView
+import Configurable
 
 /// Defines the structure of a loading view configuration. The first argument is the view that needs to be loaded. The second argument is the loading view
 public typealias DSLoadableConfiguration = (UIView, UIView) -> Void
@@ -105,27 +105,21 @@ extension DSLoadable where Self: UIView {
             return
         }
         configuration?(self, v)
-//        DispatchQueue.main.async {
-            self.addSubviewWithConstraints(v)
-//        }
+        self.addSubviewWithConstraints(v)
     }
     
     public func loadableStartLoading(configuration: DSLoadingViewFromConfiguration) {
         let view = configuration(self)
-//        DispatchQueue.main.async {
-            self.addSubviewWithConstraints(view)
-//        }
+        self.addSubviewWithConstraints(view)
     }
     
     public func loadableStopLoading(loadingViewType: UIView.Type = DSLoadingView.self, configuration: DSLoadableConfiguration? = nil) {
-//        DispatchQueue.main.async {
-            guard let loadingView = self.subviews.first(where: { type(of: $0) == loadingViewType }) else {
-                return
-            }
-            configuration?(self, loadingView)
-            
-            loadingView.removeFromSuperview()
-//        }
+        guard let loadingView = self.subviews.first(where: { type(of: $0) == loadingViewType }) else {
+            return
+        }
+        configuration?(self, loadingView)
+        
+        loadingView.removeFromSuperview()
     }
     
     /**
